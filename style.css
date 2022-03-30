@@ -1,0 +1,68 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  color: white;
+}
+
+div.displayZone{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+}
+
+div.sortAndListSec{
+  display: flex;
+  flex-direction: column;
+}
+
+input.month, input.date{
+  width: 10vw;
+}
+
+div.todo{
+  display: flex;
+  align-items: center;
+}
+
+/*已完成之事項，加上刪除線*/
+div.done{
+  opacity: 0.3;
+  text-decoration: line-through;
+}
+
+ p.todoContent, p.todoTime{
+    padding: 0.5rem 1rem;
+ }
+
+div.sort{
+  margin-top: 1.5rem;
+}
+
+@keyframes scaleUp{
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleDown{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(0);
+  }
+}
